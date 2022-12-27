@@ -150,10 +150,62 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 0.875rem;
+	padding: 1px;
 }
 
 /********TABLET********/
-@media (min-width: 768px)
+@media all and (min-width: 768px) {
 
-/********DESKTOP******/
-@media (min-width: 1200px)
+.bottom-section .content-wrapper {
+	justify-content: space-evenly;
+
+}
+.section-one {width: 26%;
+}
+            
+.section-two {
+	        width: 40%;
+            border-right: 5px solid #eee;
+			border-left: 5px solid #eee;
+		    border-top: none;
+			border-bottom: none;
+			padding: 0 38px;
+}
+
+.section-three{
+	width: 26%;
+}
+
+}
+
+/********DESKTOP******/  
+@media all and (min-width: 1200px){
+	body {
+		font-size: 1em;}
+
+		header, .content-wrapper {
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 0;
+
+		}
+
+
+	header h1{
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	} 
+
+	header nav {
+		width: 21%;
+	}
+
+	header nav ul a {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+}
